@@ -1,49 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Official Store</title>
 
-<script>
-  window.SnipcartSettings = {
-    publicApiKey: 'MzY1NzExMDMtMTE3ZC00ZDUwLWFjZjEtNGM5NDgyMjhjMGFkNjM5MjQ5NTg2MzAwNzM3NTA0
-',
-    loadStrategy: 'on-user-interaction',
-  };
-</script>
+  <!-- Clean Big Cartel Style Font & Reset -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* Store Header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    /* Big Cartel Product Card Layout */
+    .product-card {
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+    }
+
+    /* Centered Product Image */
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 24px;
+      object-fit: cover;
+    }
+
+    /* Title & Price */
+    .product-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .product-price {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 20px;
+    }
+
+    /* Size Dropdown Styling */
+    .size-picker {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    /* Big Cartel Style Black Buy Button */
+    .snipcart-add-item {
+      width: 100%;
+      background-color: #111111;
+      color: #ffffff;
+      border: none;
+      padding: 16px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .snipcart-add-item:hover {
+      background-color: #333333;
+    }
+
+    /* Store Footer */
+    footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #888888;
+    }
+  </style>
+
+  <!-- Snipcart CSS & JS Script -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <script>
+    window.SnipcartSettings = {
+      publicApiKey: 'MzY1NzExMDMtMTE3ZC00ZDUwLWFjZjEtNGM5NDgyMjhjMGFkNjM5MjQ5NTg2MzAwNzM3NTA0', // Replace with your actual key
+      loadStrategy: 'on-user-interaction',
+    };
+  </script>
 </head>
-    <div id="snipcart" data-api-key="MzY1NzExMDMtMTE3ZC00ZDUwLWFjZjEtNGM5NDgyMjhjMGFkNjM5MjQ5NTg2MzAwNzM3NTA0" hidden></div>
 <body>
-    <h1>Hello World!</h1>
-    <p>My static site is officially live on GitHub Pages.</p>
+
+  <!-- Brand Title -->
+  <header>
+    <h1>My Brand Name</h1>
+  </header>
+
+  <!-- Main Product Showcase -->
+  <main class="product-card">
+    <img src="shirt.jpg" alt="Custom Graphic Tee" class="product-image" />
+    
+    <h2 class="product-title">Custom Graphic T-Shirt</h2>
+    <p class="product-price">$35.00</p>
+
+    <!-- Snipcart Add To Cart Button -->
+    <button
+      class="snipcart-add-item"
+      data-item-id="tshirt-001"
+      data-item-name="Custom Graphic T-Shirt"
+      data-item-price="35.00"
+      data-item-url="/"
+      data-item-image="shirt.jpg"
+      data-item-custom1-name="Size"
+      data-item-custom1-options="Small|Medium|Large|X-Large|2XL">
+      Add to Cart
+    </button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 All Rights Reserved.</p>
+  </footer>
+
+  <!-- Snipcart Hidden Container -->
+  <div id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY" hidden></div>
+
 </body>
 </html>
-<!-- Snipcart CSS -->
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-
-<!-- Snipcart JavaScript -->
-<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-
-<script>
-  window.SnipcartSettings = {
-    publicApiKey: 'MzY1NzExMDMtMTE3ZC00ZDUwLWFjZjEtNGM5NDgyMjhjMGFkNjM5MjQ5NTg2MzAwNzM3NTA0
-',
-    loadStrategy: 'on-user-interaction',
-  };
-</script>
-
-<img src="shirt.jpg" alt="Custom T-Shirt" style="max-width: 300px; width: 100%; height: auto;">
-
-<!-- Your Snipcart Buy Button -->
-<button
-  class="snipcart-add-item"
-  data-item-id="tshirt-001"
-  data-item-name="Custom Graphic T-Shirt"
-  data-item-price="35.00"
-  data-item-url="/"
-  data-item-image="tshirt.jpg"
-  data-item-custom1-name="Size"
-  data-item-custom1-options="S|M|L|XL|2XL">
-  Add to Cart - $35
-</button>
