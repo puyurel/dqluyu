@@ -83,6 +83,44 @@
       background-color: #333333;
     }
 
+    /* Email Sign-Up Form Styling */
+    .email-form {
+      margin-top: 40px;
+      text-align: center;
+      border-top: 1px solid #eeeeee;
+      padding-top: 30px;
+    }
+    .email-headline {
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .input-group {
+      display: flex;
+      gap: 8px;
+    }
+    .input-group input[type="email"] {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      font-size: 14px;
+      outline: none;
+    }
+    .input-group button {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
     /* Footer */
     footer {
       margin-top: 60px;
@@ -128,6 +166,15 @@
       data-item-custom1-options="Small|Medium|Large|X-Large|2XL">
       Add to Cart
     </button>
+
+    <!-- Email Sign-Up Form (Netlify Forms) -->
+    <form name="newsletter" method="POST" data-netlify="true" class="email-form">
+      <p class="email-headline">JOIN THE LIST</p>
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
   </main>
 
   <!-- Footer -->
